@@ -30,7 +30,7 @@ circuit.elements = {
 };
 ```
 ## 核心函数generate_mna()
-输入电路结构体，频率变量s（$={j\omega}$，如果只关心z轴），以及参考点的名称（在电路结构体中必须出现）。
+输入电路结构体，频率变量s（$={j\omega}$，如果只关心虚轴），以及参考点的名称（在电路结构体中必须出现，例如'gnd'）。
 返回电路矩阵A，目标向量x，独立源向量z，节点名称-向量索引映射node_map，和extra_info。
 ```matlab
 [A, x, z, node_map, extra_info] = generate_mna(circuit,s,'gnd');
